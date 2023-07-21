@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b8f6954812.js" crossorigin="anonymous"></script>
-    <title>Teste</title>
+    
+    <title>Home Page</title>
 </head>
 <body>
     <header>
@@ -18,7 +18,7 @@
                             <span></span>
                             <span></span>
                             <span></span>
-                            <span></span> <a class="upButton" href="principal"> Home</a></li>
+                            <span></span> <a class="upButton" href="#home"> Home</a></li>
                         </button>
                         
                     <li>
@@ -26,50 +26,101 @@
                             <span></span>
                             <span></span>
                             <span></span>
-                            <span></span> <a class="upButton" href="skills">Skills</a></li>
+                            <span></span> <a class="upButton" href="#skills">Skills</a></li>
                         </button>
                     <li>
                         <button>
                             <span></span>
                             <span></span>
                             <span></span>
-                            <span></span> <a class="upButton" href="projetos">Projetos</a></li>
+                            <span></span> <a class="upButton" href="#projetos">Projetos</a></li>
                         </button>
                 </ul>
             </nav>    
-
         </div>
-       
-        
-        
-        
     </header>
     
     <main class="principal">
-        <section class="principal__texto">
+        <section id ="home" class = "principal__texto">
             <h1 class="principal__texto__titulo">Desenvolvedor<strong> Front-End</strong></h1>
             <p class="principal__texto__paragrafo">Olá! Me chamo João Pedro Amorim, 
                 sou desenvolvedor Front-End e atualmente estudo pela Alura, 
-                pelo Youtube e estou cursando o quarto semestre de Sistemas 
+                pelo Youtube e estou cursando o quinto semestre de Sistemas 
                 de Informação pela Universidade Federal de Mato Grosso</p>
+                <br>
+              <h2 class="principal__texto__titulo">Acesse minhas redes:</h2>
             <div class="principal__botao">
-                <a class="principal__links" href="https://instagram.com/joaoamr_"><i class="fa-brands fa-instagram fa-beat"></i> Instagram</a>
+                <a class="principal__links" href="homepage-2/curriculoJP" download="Curriculo João Pedro Amorim"><i class="fa-solid fa-file-pdf"></i> Currículo</a>
                 <a class="principal__links" href="https://github.com/dotjoao"><i class="fa-brands fa-github fa-bounce"></i> GitHub</a>
                 <a class="principal__links" href="https://linkedin.com/in/joaoamorim811/"><i class="fa-brands fa-linkedin"></i></i> Linkedin</a>
                 
             </div>
         </section>
-        <img class="joao" src="fotoJP.jpg">
-        
-        
+        <img class="joao" src="assets/fotoJP.png.png">
     </main>
-    <div class="main2">
-        <section class="skills">Skills</section>
-        <section class= "projetos">Projetos</section>
-    </div>
 
-    
+    <div class="main2">
+      
+
+        <section id="skills">
+            <div id="skills-principal">
+              <h2 class="principal__texto__titulo">FrontEnd:</h2>
+              <div class="card-body">
+                <div class="card-skill">
+                  <div class="skill-name"><i class="fa-brands fa-html5"></i> HTML</div>
+                  <div class="skill-level">
+                    <div class="skill-percent" style="width: 90%"></div>
+                  </div>
+                  <div class="skill-percent-number">90%</div>
+                </div>
+                <div class="card-skill">
+                  <div class="skill-name"><i class="fa-brands fa-css3-alt"></i> CSS</div>
+                  <div class="skill-level">
+                    <div class="skill-percent" style="width: 80%"></div>
+                  </div>
+                  <div class="skill-percent-number">80%</div>
+                </div>
+                <div class="card-skill">
+                  <div class="skill-name"><i class="fa-brands fa-js"></i> JavaScript</div>
+                  <div class="skill-level">
+                    <div class="skill-percent" style="width: 39%"></div>
+                  </div>
+                  <div class="skill-percent-number">39%</div>
+                </div>
+              </div>
+            </div>
+
+            <div id="skills-principal">
+              <h2 class="principal__texto__titulo">BackEnd:</h2>
+                <div class="card-body">
+                  <div class="card-skill">
+                    <div class="skill-name"><i class="fa-brands fa-java"></i> JAVA</div>
+                    <div class="skill-level">
+                      <div class="skill-percent" style="width: 70%"></div>
+                    </div>
+                    <div class="skill-percent-number">70%</div>
+                  </div>
+                  <div class="card-skill">
+                    <div class="skill-name"><i class="fa-solid fa-database"></i> Postgresql</div>
+                    <div class="skill-level">
+                      <div class="skill-percent" style="width: 50%"></div>
+                    </div>
+                    <div class="skill-percent-number">50%</div>
+                  </div>
+                  <div class="card-skill">
+                    <div class="skill-name"><i class="fa-brands fa-php"></i> Php</div>
+                    <div class="skill-level">
+                      <div class="skill-percent" style="width: 5%"></div>
+                    </div>
+                    <div class="skill-percent-number">5%</div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <section id= "projetos">Projetos</section>
+    </div>
     <footer></footer>
-    
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/b8f6954812.js" crossorigin="anonymous"></script>
 </body>
 </html>
