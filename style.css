@@ -57,7 +57,7 @@ section{
 
 button {
     position: relative;
-    padding: 0.3em 1.5em;
+    padding: 0.9em 5.5em;
     outline: none;
     border: 1px solid #212121;
     background: #212121;
@@ -67,7 +67,7 @@ button {
     font-size: 0.9rem;
     overflow: hidden;
     transition: 0.2s;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
    }
@@ -99,7 +99,7 @@ button {
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #001eff);
+    background: linear-gradient(90deg, transparent, #ae00ff);
    }
    
    button:hover span:nth-child(3) {
@@ -127,7 +127,7 @@ button {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #001eff);
+    background: linear-gradient(360deg, transparent, #ae00ff);
    }
    
    button:hover span:nth-child(4) {
@@ -138,9 +138,9 @@ button {
    
    button:active {
     background: #ae00af;
-    background: linear-gradient(to top right, #ae00af, #001eff);
+    background: linear-gradient(to top right, #ae00af, #ae00ff);
     color: #bfbfbf;
-    box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+    box-shadow: 0 0 8px #ae00ff, 0 0 8px #ae00ff, 0 0 8px #ae00ff;
     transition: 0.1s;
    }
    
@@ -182,7 +182,7 @@ button {
 
 
 .principal{
-    padding: 0% 15%;
+    padding: 0% 12%;
     display: flex;
     justify-content: space-between;
     gap: 80px;
@@ -199,7 +199,7 @@ button {
 }    
 
 .principal__texto__titulo{
-    font: size 2rem;;
+    font-size: 2rem;;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -219,8 +219,8 @@ strong{
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    padding-top: 3rem;
+    gap: 80px;
+    margin-top: 7rem;
 }
 
 .principal__links{
@@ -228,16 +228,15 @@ strong{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 16px );
     -webkit-backdrop-filter: blur( 16px );
-    border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 50px;
     color: white;
-    width: 300px;
+    width: 450px;
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    padding:10px 0;
+    padding:30px 35px;
     font-weight: 600;
     transition: .3s;
 }
@@ -265,11 +264,18 @@ strong{
 }
 
 
+.skills_principal_titulo{
+    font-size: 40px;;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
 #skills{
     display:flex;
     align-items: center;
-    justify-content: center;
-    gap: 120px;
+    justify-content: space-evenly;
+    gap: 200px;
+    
 }
 
   
@@ -277,7 +283,7 @@ strong{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin: 0;
+    margin: 5rem;
     gap: 100px;
    
   }
@@ -314,19 +320,90 @@ strong{
     font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
   }
-  
+
+  #projetos{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding-top: 15rem;
+    
+}
+
+#valorant{
+    align-self: baseline;
+    background-color: #a372dc;
+    width: 500px;
+    height: 400px;
+    display:flex;
+    background-image:url(assets/fotoValorant.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    
+}
+
+#CrudJava{
+    background-color: #ae00ff;
+    width: 500px;
+    height: 400px;
+    display:flex;
+    background-image:url(assets/fotoCrud.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+#loading{
+    display:flex;
+    background-color: #37165e;
+    width: 500px;
+    height: 400px;
+    align-self: baseline;
+}
+
+#idName{
+    display: block;
+    background-color: #212121;
+    align-self:end;
+    width: 100%;
+    padding-top: 60px;
+    margin: 0%;
+    font-size: 1.9rem;;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    justify-content: center;
+    
+}
 
   @media (max-width:1200px){
+    
+    
+    
+    .menu{
+        justify-content: center;
+    }
+
+    .menu ul{
+        flex-direction: column;
+        
+    }
     
     .principal{
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    #skills{
+    #skills, #projetos{
         flex-direction: column;
         padding-top: 15rem;
         
+    }
+
+ 
+    #valorant, #loading, #CrudJava{
+        align-self: center;
     }
 
 
